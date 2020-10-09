@@ -51,6 +51,7 @@ $(document).ready(function() {
         var rest_data = {
             'name': $('#contact_name').val(),
             'email': $('#contact_email').val(),
+            'gender': $('input[name="gender_radio"]:checked', '#contact-form').val(),
             'utm_source': sessionStorage.getItem('utm_source') == null ? '' : sessionStorage.getItem('utm_source'),
             'utm_medium': sessionStorage.getItem('utm_medium') == null ? '' : sessionStorage.getItem('utm_medium'),
             'utm_campaign': sessionStorage.getItem('utm_campaign') == null ? '' : sessionStorage.getItem('utm_campaign'),
